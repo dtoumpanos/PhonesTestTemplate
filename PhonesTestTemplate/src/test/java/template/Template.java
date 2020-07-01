@@ -26,11 +26,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 		  
 	  @Test
 	  public <WebElement> void test() throws InterruptedException {
-	    driver.get("https://www.google.com/");
-	    Thread.sleep(10000);	    
+		Thread.sleep(1000);
+		driver.get("https://www.google.com/");
+		Thread.sleep(1000);
 	    driver.findElement(By.name("q")).click();
 	    driver.findElement(By.name("q")).sendKeys("unify.com");
 	    driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+	    Thread.sleep(1000);	
 	   }
 	  			
 }
